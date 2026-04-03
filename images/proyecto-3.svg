@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" role="img" aria-label="Proyecto app UI">
+  <rect width="400" height="220" fill="#212529"/>
+  <rect x="145" y="25" width="110" height="170" rx="14" fill="#343a40" stroke="#495057" stroke-width="2"/>
+  <rect x="155" y="45" width="90" height="12" rx="3" fill="#34d399"/>
+  <rect x="155" y="68" width="90" height="50" rx="6" fill="#495057"/>
+  <rect x="155" y="128" width="90" height="10" rx="2" fill="#6c757d"/>
+  <rect x="155" y="148" width="42" height="32" rx="4" fill="#047857" opacity="0.9"/>
+  <rect x="203" y="148" width="42" height="32" rx="4" fill="#6c757d"/>
+</svg>

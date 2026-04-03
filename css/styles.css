@@ -1,0 +1,98 @@
+
+/* Tema aplicado: verde esmeralda + grises pizarra (legible y profesional para portfolio creativo) */
+:root {
+  /* Integración con Bootstrap: navbar, botones .btn-primary, enlaces, etc. */
+  --bs-primary: #047857;
+  --bs-primary-rgb: 4, 120, 87;
+  --bs-link-color: #047857;
+  --bs-link-hover-color: #065f46;
+  --bs-primary-hover: #065f46;
+  --bs-outline-primary: #047857;
+  --bs-outline-primary-hover: #065f46;
+  --bs-outline-primary-rgb: 4, 120, 87;
+  --bs-outline-primary-hover-rgb: 6, 95, 70;  
+
+  --color-fondo-pagina: #f1f5f4;
+  --color-texto-suave: #475569;
+  --color-hero-fondo: linear-gradient(165deg, #d1fae5 0%, #f1f5f4 50%, #ffffff 100%);
+  --fuente-titulos: "Outfit", system-ui, sans-serif;
+  --fuente-cuerpo: "DM Sans", system-ui, sans-serif;
+}
+
+/* Tipografía global */
+body {
+  font-family: var(--fuente-cuerpo);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: var(--color-fondo-pagina);
+  padding-top: 56px; /* espacio bajo la navbar fija de Bootstrap */
+}
+
+/* Jerarquía: títulos un poco más aireados */
+h1 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  line-height: 1.25;
+}
+
+.lead,
+.text-secondary {
+  color: var(--color-texto-suave) !important;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: var(--fuente-titulos);
+}
+
+/* Sección hero */
+.hero-section {
+  background: var(--color-hero-fondo);
+}
+
+.hero-img {
+  max-width: 280px;
+  border: 4px solid #fff;
+}
+
+/* Imágenes de tarjetas: altura uniforme en proyectos */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  background-color: #e9ecef;
+}
+
+/* Enlaces del menú: pequeño feedback al pasar el mouse */
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Suavizar scroll al hacer clic en anclas del menú */
+html {
+  scroll-behavior: smooth;
+}
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+}
+.btn-outline-primary {
+  background-color: #fff;
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+  color: #fff;
+}
