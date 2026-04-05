@@ -1,3 +1,21 @@
+/*
+  Estilos personalizados del portfolio
+  Bootstrap ya trae muchos estilos; aquí solo ajustamos identidad y detalles.
+
+  --- Otras paletas (para tu PDF de justificación; copia a :root si quieres probar) ---
+
+  Azul confianza (análogo al azul Bootstrap, más sobrio):
+    --bs-primary: #1d4ed8;  --bs-primary-rgb: 29, 78, 216;
+    Fondo: #f8fafc;  Hero: de #eff6ff a #f8fafc
+
+  Terracota creativa (acento cálido; buena en fondos claros):
+    --bs-primary: #b45309;  --bs-primary-rgb: 180, 83, 9;
+    Texto principal: #1c1917;  Fondo: #fffbeb
+
+  Violeta editorial (marca “premium”):
+    --bs-primary: #5b21b6;  --bs-primary-rgb: 91, 33, 182;
+    Fondo: #faf5ff;  Texto: #1e1b4b
+*/
 
 /* Tema aplicado: verde esmeralda + grises pizarra (legible y profesional para portfolio creativo) */
 :root {
@@ -77,6 +95,21 @@ h3,
 /* Suavizar scroll al hacer clic en anclas del menú */
 html {
   scroll-behavior: smooth;
+}
+
+/* Anclas: compensar navbar fija */
+#inicio,
+#sobre-mi,
+#proyectos,
+#caso-estudio,
+#contacto {
+  scroll-margin-top: 4.5rem;
+}
+
+/* Caso de estudio: fondo ligeramente distinto para separar de proyectos */
+.caso-estudio-section {
+  background-color: #ffffff;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
 }
 .btn-primary {
   background-color: var(--bs-primary);
